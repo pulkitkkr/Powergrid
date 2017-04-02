@@ -1,0 +1,51 @@
+<ion-view title="My Profile">
+    <ion-content padding="true" class="has-header">
+       		
+         <div class="card">
+         	<form class="list">
+         		<div class="item item-body">
+         			 <div class="row">
+ 						 <div class="col col-33">
+ 						 	<h2><b>Name</b></h2>
+ 						 </div>
+ 						 <div class="col ">
+ 						 	<h3>{{PresentUser.Name}}</h3>
+ 						 </div>
+ 					 </div>
+                      <div class="row">
+                         <div class="col col-33">
+                            <h2><b>Position </b></h2>
+                         </div>
+                         <div class="col ">
+                            <h3>{{PresentUser.Position}}</h3>
+                         </div>
+                     </div>
+                     
+ 					 <div class="row">
+ 						 <div class="col col-33">
+ 						 	<h2><b>E-mail Id</b></h2>
+ 						 </div>
+ 						 <div class="col ">
+ 						 	<h3>{{PresentUser.UserName}}</h3>
+ 						 </div>
+ 					 </div>
+ 					 <div class="row">
+ 						 <div class="col col-33">
+ 						 	<h2><b>Phone </b></h2>
+ 						 </div>
+ 						 <div class="col ">
+ 						 	<h3>{{PresentUser.Tel}}</h3>
+ 						 </div>
+ 					 </div>
+                    
+         		</div>
+         	</form>	
+         	
+         </div>
+        <button ng-click="SignOut()" class="button button-block button-assertive pull-right">Sign Out</button>
+		
+         
+       <!---->
+    </ion-content>
+
+</ion-view>

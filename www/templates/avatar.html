@@ -1,0 +1,13 @@
+
+<ion-view title="Avatar Selection">
+	 <ion-content padding="true" class="has-header">
+		
+		<div   ng-repeat="avt in imgx">
+			<center>
+				<img  class="card animated bounceIn"ng-click="SelectionMade($index);" width="46%" style="float:left; margin:1.5%; border:0.5px solid black;"  ng-src="avatar/{{avt}}.png">
+			</center>
+			
+		</div>
+		
+	</ion-content>
+</ion-view>

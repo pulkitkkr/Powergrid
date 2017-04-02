@@ -1,0 +1,43 @@
+<ion-view title="Signup">
+    <ion-content padding="true" class="has-header">
+        
+        <form  class="list">
+            <div class="list card">
+                <div class="item item-divider">Personal Details</div>
+                <div class="item item-body">
+                        <label class="item item-input">
+                            <span class="input-label">Name</span>
+                            <input type="text" ng-model="eventform.Name" placeholder="Enter Your Name" required>
+                        </label>
+                        <label class="item item-input">
+                            <span class="input-label">Email</span>
+                            <input ng-model="eventform.UserName" type="email" placeholder="Enter Email" required>
+                        </label>
+                        <label class="item item-input">
+                            <span class="input-label">Phone No</span>
+                            <input type="tel" ng-model="eventform.Tel" placeholder="Enter your Mob No" required >
+                        </label>
+                        <label class="item item-input">
+                            <span class="input-label">Password</span>
+                             <input ng-model="eventform.Pass" type="Password" placeholder="Set Password" required>
+                        </label>
+                    
+                        
+                        <label class="item item-input">
+                            <span class="input-label">Position</span>
+                             <input ng-model="eventform.Position" type="text" placeholder="Enter Designation " required>
+                        </label>
+                      
+                           
+                        
+                    
+                </div>
+            </div>
+            <ion-list></ion-list>
+            
+            <input type="button" ng-click="submitForm(eventform)" class="button button-assertive button-block " value="Sign up"></input>
+
+        </form>
+        
+    </ion-content>
+</ion-view>

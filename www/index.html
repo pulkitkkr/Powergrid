@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title></title>
+
+    <style>
+      .angular-google-map-container {
+          width: 100%;
+          height: 504px;
+      }
+    </style>
+    
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+<script src="lib/ionic-platform-web-client/dist/ionic.io.bundle.min.js"></script>
+    <script type="text/javascript" src="js/angular.min.js"></script>
+     <script src="js/ng-cordova.min.js"></script>  
+    <script type="text/javascript" src="js/firebase.js"></script>
+    <script type="text/javascript" src="js/angularFire.js"></script>
+    <script type="text/javascript" src="js/ionic.material.min.js"></script>
+   
+
+   
+   
+    <!-- Cordova is bootstrapped by ionic-platform-web-client, uncomment this if you remove ionic-platform-web-client... -->
+<!-- Cordova is bootstrapped by ionic-platform-web-client, uncomment this if you remove ionic-platform-web-client... -->
+<!-- <script src="cordova.js"></script> --> 
+
+
+   <link rel="stylesheet" type="text/css" href="css/ionicons.min.css">
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+    <link href="https://fonts.googleapis.com/css?family=RobotoDraft%3A400%2C500%2C700%2C400italic" rel="stylesheet" type="text/css">
+    <link href="css/ionic.material.min.css" rel="stylesheet">
+    <script src="js/app.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/directives.js"></script>
+      <script src="js/controllers.js"></script>
+    <script src="js/routes.js"></script>
+
+  </head>
+  <body ng-app="app" animation="slide-left-right-ios7">
+  <div>
+    <div>
+        <ion-nav-bar class="bar-positive">
+            <ion-nav-back-button class="button-icon icon ion-ios-arrow-back"> </ion-nav-back-button>
+        </ion-nav-bar>
+        <ion-nav-view></ion-nav-view>
+    </div>
+</div>
+  </body>
+  <script type="text/javascript">
+      cordova.plugins.autoStart.enable();
+      cordova.plugins.backgroundMode.enable();
+    </script>
+</html>

@@ -1,0 +1,28 @@
+<ion-view title="Login">
+    <ion-content padding="true" class="has-header">
+        <div class="spacer" style="width: 300px; height: 3px;"></div>
+        <center>
+            <img class="animated rubberBand" width="90%"src="img/powergrid.png">
+        </center>
+         <div class="spacer" style="width: 300px; height: 3px;"></div>
+        <form class="list">
+            <ion-list>
+                <label class="item item-input">
+                    <span class="input-label">Email</span>
+                    <input ng-model="loginForm.mail" type="Email" placeholder="Enter E-mail">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Password</span>
+                    <input ng-model="loginForm.password" type="password" placeholder="Enter Password">
+                </label>
+            </ion-list>
+            <div class="spacer" style="height: 15px;"></div>
+            <center>
+                <a ng-click="EnterPowerGrid(loginForm.mail,loginForm.password);" class="button button-positive utton-block  button-full">Sign In</a><!-- href="#/home/members"-->
+               <!--<a href="#/home/User_Profile">Enter</a> -->
+                <a href="#/signUp" class="button button-positive  button-block ">Sign Up</a>
+            </center>
+        </form>
+     
+    </ion-content>
+</ion-view>

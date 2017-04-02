@@ -1,0 +1,61 @@
+<ion-view title="Notices" ng-init="InView='true'">
+	<ion-content padding="true" class="has-header">
+		<div class="button-bar">
+  			<a ng-click="ViewNoticeToggle()" class="button">Notice Board</a>
+  			<a ng-click="AddNoticeToggle()" class="button">Add Notice</a>
+  		</div>
+
+  		<div ng-if="InView">
+
+            <div class="card" ng-repeat="post in PostData">
+              <img class="card animated jello" src="{{post.picx}}" style="border-radius:30px;position:relative; width:100%"/>
+             
+              <div class="card">
+                  <form class="list">
+                      <div class="item item-body">
+                          <div class="row">
+                              <center>
+                                  <h2><b>{{post.titlex}}</b></h2>
+                              </center>        
+                          </div>
+                          <div class="row">
+                             <div class="col ">
+                                 <h3>{{post.contentx}}</h3>
+                             </div>
+                     </div>
+                      </div>
+                  </form>
+
+              </div>   
+                
+            </div>
+        </div>
+		
+  		<div ng-if="InAdd" class="card">
+            <div class="item item-text-wrap">
+ 			 	<div class="item item-divider">Notice Details</div>
+  				 <form class="list">
+  				 	<div class="item item-body">
+                      
+                        <label class="item item-input">
+                            <span class="input-label">Title</span>
+                            <input type="text" ng-model="noticeform.titlex" placeholder="Enter Title" required>
+                        </label>
+                      
+                        <label class="item item-input" style="vertical-align: text-top;">
+                            <span class="input-label"  style="position:relative; bottom:1.78em;">Content</span>
+                            <textarea  ng-model="noticeform.contentx" rows="8" cols="10"   placeholder="Enter Content" ></textarea>
+                            
+                        </label>
+                        <label class="item item-input">
+                            <span class="input-label">Admin Key</span>
+                            <input type="password" ng-model="noticeform.password" placeholder="Enter Admin Key" required>
+                        </label>
+                    <button type="button" ng-click="submitPost(noticeform)" class="button button-bar button-balanced button-small button-block">Post Notice</button>    
+                        
+             <div>    
+  				 </form>
+			 </div>
+        </div        
+	</ion-content>
+</ion-view>
